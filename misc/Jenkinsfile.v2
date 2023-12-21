@@ -25,7 +25,7 @@ node {
    }                                     
    stage('docker build/push') {            
      docker.withRegistry('https://index.docker.io/v2/', '71b3e8e4-26ad-4be5-9503-7d1627693202') {
-       def app = docker.build("CathyPds/docker-nodejs-demo:${commit_id}", '.').push()
+       def app = docker.build("CathyPds/jutilisedocker1/docker-nodejs-demo:${commit_id}", '.').push()
      }                                     
    }                                       
 }                                          
